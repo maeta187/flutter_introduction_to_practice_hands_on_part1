@@ -28,5 +28,9 @@
   "imageEdit": "画像を編集する",
   "@imageEdit": {
     "description": "The text on the image edit button"
+  },
+  "imageEditScreenTitle": "画像を編集",
+  "@imageEditScreenTitle": {
+    "description": "The title of the image edit screen"
   }
 }
