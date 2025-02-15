@@ -1,3 +1,4 @@
+import 'package:flutter_introduction_to_practice_hands_on_part1/image_select_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -22,7 +23,13 @@ class StartScreen extends StatelessWidget {
             ),
             ElevatedButton(
               child: Text(l10n?.start ?? ''),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const ImageSelectScreen(),
+                  ),
+                );
+              },
             ),
           ],
         ),
