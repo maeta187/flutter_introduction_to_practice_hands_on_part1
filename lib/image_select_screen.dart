@@ -6,6 +6,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:image_picker/image_picker.dart';
 // Imageウィジェットと名前が重複するためasキーワードを名前を変更
 import 'package:image/image.dart' as image_lib;
+import 'package:flutter_introduction_to_practice_hands_on_part1/edit_snap_screen.dart';
 
 class ImageSelectScreen extends StatefulWidget {
   const ImageSelectScreen({super.key});
@@ -94,7 +95,14 @@ class _ImageSelectScreenState extends State<ImageSelectScreen> {
             // 画像が選択されると「画像を編集する」ボタンを表示
             if (imageBitmap != null)
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) =>
+                          ImageEditScreen(imageBitmap: imageBitmap),
+                    ),
+                  );
+                },
                 child: Text(l10n?.imageEdit ?? ''),
               ),
           ],
