@@ -16,5 +16,17 @@
   "start": "開始する",
   "@start": {
     "description": "The text on the start button"
+  },
+  "imageSelectScreenTitle": "画像を選択",
+  "@imageSelectScreenTitle": {
+    "description": "The title of the image select screen"
+  },
+  "imageSelect": "画像を選ぶ",
+  "@imageSelect": {
+    "description": "The text on the image select button"
+  },
+  "imageEdit": "画像を編集する",
+  "@imageEdit": {
+    "description": "The text on the image edit button"
   }
 }
